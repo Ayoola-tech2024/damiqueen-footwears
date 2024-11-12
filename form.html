@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <style>
+    .account-page{
+        background: transparent!important;
+    }
+    </style>
+
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace with your actual User ID
+        })();
+
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            emailjs.sendForm('service_9tz6h49', '__ejs-test-mail-service__', this)
+                .then(function() {
+                    alert('Message sent successfully!'); // Success message
+                }, function(error) {
+                    alert('Failed to send message. Please try again later.'); // Error message
+                });
+        });
+    </script>
+
+
+
+
+    <!-- Account-Page -->
+    <div class="account-page">
+        <div class="container-1">
+            <div class="row">
+                <div class="col-2">
+                    <img src="Ecommerce images/Background-removebg.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm" action="https://formspree.io/f/mldejwyn" method="POST">
+                            <input type="text" placeholder="Username" name="Username" required >
+                            <input type="password" placeholder="Password" name="password" required >
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+
+                        <form id="RegForm" action="https://formspree.io/f/mldejwyn" method="POST">
+                            <input type="text" placeholder="Username" name="Username" required>
+                            <input type="email" placeholder="Email" name="email" required>
+                            <input type="password" placeholder="Password" required>
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <iframe src="https://form.jotform.com/243058175265560" frameborder="0" style="width: 100%; height: 500px;" scrolling="no"></iframe>
+
+    <iframe aria-label='Signup' frameborder="0" scrolling="no" style="height:500px;width:99%;border:none; margin: 20px;" src='https://forms.zohopublic.com/damisileayoolagm1/form/Signup/formperma/ypPQiRge0JdDwVMmyppq5BVNJ0IRX2jQKMQjLAeqV9I'></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="small-container">
+        <div>
+            <h2 class="title">Featured Products</h2>  
+            <h4> Click each section to view collection </h4>
+        </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="Ecommerce images/Product (10).jpg" class="product"></a>
+                        <h3>Half Shoes</h3>
+                        <div class="rating">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px" >
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                        <del><p>$14.00</p></del>
+                        <p>$13.00</p>
+                    </div>
+                </div>
+        
+                    <div class="col-4"><a href="product-details-2.html"><img src="Ecommerce images/Product (27).jpg" class="product"></a>
+                        <h3>Palms</h3>
+                        <div class="rating">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/half-star.png" width="18px" height="18px">
+                        </div>
+                        <del><p>$7.20</p></del>
+                        <p>$6.80</p>
+                    </div>
+
+
+                    <div class="col-4">
+                        <a href="product-details-3.html"><img src="Ecommerce images/Product (2).jpeg" class="product"></a>
+                        <h3>Corporate Shoes</h3>
+                        <div class="rating">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                        </div>
+                        <del><p>$19.20</p></del>
+                        <p>$18.80</p>
+                    </div>
+        
+                    
+                    <div class="col-4">
+                        <a href="Product-details-4.html"> <img src="Ecommerce images/Product (15).jpg"  class="product"> </a>
+                        <h3> Sandals </h3>
+                        <div class="rating">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/star.png" width="18px" height="18px">
+                            <img src="Ecommerce images/half-star.png" width="18px" height="18px">
+                        </div>
+                        <del><p>$7.20</p></del>
+                        <p>$6.00</p>
+                    </div>
+                </div>
+        
+            </div>
+            </div>
